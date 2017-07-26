@@ -1,40 +1,41 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Conrad Knapp</title
+	<title>Conrad Knapp</title>
 	<meta charset="utf-8">
 	<style>
-    div a {
-        color: red;
-    }
-	div {
-        border: 1px solid black;
-      }
+    /* GLOBAL STYLES */
     a {
-        color: red;
+        color: blue;
+        background: rgba(50, 150, 200, 0.3);
     }
-    </style>
+    .site-wrapper{
+        width: 500px;
+    }
+    /* WEBSITE STYLES */
+    .site-list {
+        border: 1px solid black;
+        background: lightgray;
+        text-align: center;
+        width: 50%;
+        padding: 2px
+    }
+    h1 {
+        font: 30px;
+        color: purple;
+        text-align: center;
+    }
+</style>
 </head>
-<body>
-	<h1>Welcome to my project of 111 webpages in 111 days.</h1>  
-  	<ul>
-    	<li>
-    		<a href="http://example.com/">Link</a>
-    	</li>
-    	<li>
-    		<a href="http://example.com">Link</a>
-    	</li>
-    
-    	<li>
-    		<a href="http://example.com"> Another Link</a>
-    	</li>
-    </ul>
-    <h2>Starting July 22nd, 2017.</h2>
-	<div>
-    	<a href="http://github.io.com/cknapp92/day1html">Day 1</a>
-    	<a href="http://github.io.com/cknapp92/day2html">Day 2</a>
-        <a href="http://github.io.com/cknapp92/day3html">Day 3</a>
+  <body>
+  <div class="site-wrapper">
+	<h1>111 webpages in 111 days</h1>
+    <div class="site-list">
+    <a href="http://example.com">Day 1</a>
     </div>
-</body>
+    <div class="site-list">
+    <a href="http://example.com">Day 2</a>
+    </div>
+  </div>
+  </body>
 </html>
