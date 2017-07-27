@@ -4,41 +4,69 @@
 	<title>Conrad Knapp</title>
 	<meta charset="utf-8">
 	<style>
-    /* GLOBAL STYLES */
-    a {
-        color: blue;
-        background: rgba(50, 150, 200, 0.3);
-    }
-    .site-wrapper{
-        width: 500px;
-    }
-    /* WEBSITE STYLES */
-    .site-list {
-        border: 1px solid black;
-        background: lightgray;
-        text-align: center;
-        width: 50%;
-        padding: 2px
+      /* GLOBAL STYLES */
+    html,body {
+        margin: 0;
+        padding: 0;
     }
     h1 {
-        font-size: 1em;
         color: purple;
+        font-family: cursive;
+        font-size: 7vw;
+        margin-top: 0;
+    }
+    a {
+        color: #f00
+    }
+    /* HERO STYLES */
+    .full-hero {
+        background-color: #cbfc;
+        height: 100vh;
+    }
+    
+    /* PAGE LINKS */
+    .page-list {
+        list-style: none;
+        padding: 0;
         text-align: center;
+    }
+    .page-link {
+        background: rgba(150, 150, 150, 0.5);
+        border-radius: 200px;
+        box-sizing: border-box;
+        color: blue;
+        display: inline-block;
+        font-family: helvetica;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5em
+        line-height: 1;
+        padding-top: 0.85em;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 2.5em;
+        
+    }
+    .page-list > li {
+        display: inline-block;
+        margin: 0 0.5em;
     }
 </style>
 </head>
   <body>
-  <div class="site-wrapper">
-	<h1>111 webpages in 111 days</h1>
-    <div class="site-list">
-    <a href="http://example.com">Day 1</a>
-    </div>
-    <div class="site-list">
-    <a href="http://example.com">Day 2</a>
-    </div>
-    <div class="site-list">
-        <a href="http://example.com">Day 3</a>
-        </div>
-  </div>
+  <div class="full-hero hero home">
+	<h1>111 Pages, 111 Days</h1>
+     <ul class="page-list">
+    <li>
+      <a href="http://example.com" class="page-link">Day 1</a>
+    </li>
+    <li>
+      <a href="http://example.com" class="page-link">Day 2</a>
+    </li>
+    <li>
+      <a href="http://example.com" class="page-link">Day 3</a>
+    </li>
+    </ul>
   </body>
 </html>
