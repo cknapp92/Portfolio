@@ -49,7 +49,7 @@ a img {
  /* GLOBAL STYLES */
 
         h1 {
-            color: purple;
+            color: blue;
             font-family: cursive;
             font-size: 7vw;
             margin-top: 0;
@@ -57,10 +57,19 @@ a img {
         a {
             color: #f00
         }
+
+        /* HEADER STYLES */
+        .header-nav {
+          float: right;
+        }
+        .header-nav > li {
+          display: inline-block;
+        }
+
         /* HERO STYLES */
         .full-hero {
-            background-color: #cbfc;
-            height: 50vh;
+            background-color: #C3D7FF;
+            height: 30vh;
         }
     
         /* PAGE LINKS */
@@ -68,6 +77,10 @@ a img {
             list-style: none;
             padding: 0;
             text-align: center;
+        }
+        .page-list > li {
+            display: inline-block;
+            margin: 0 0.5em;
         }
         .page-link {
             background: rgba(150, 150, 150, 0.5);
@@ -85,9 +98,5 @@ a img {
             text-decoration: none;
             vertical-align: middle;
             width: 2.5em;
-            
         }
-        .page-list > li {
-            display: inline-block;
-            margin: 0 0.5em;
-        }
+      
