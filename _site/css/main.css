@@ -47,7 +47,7 @@ a img {
 /* END RESET*/
 
  /* GLOBAL STYLES */
-
+      
         h1 {
             color: blue;
             font-family: cursive;
@@ -59,44 +59,92 @@ a img {
         }
 
         /* HEADER STYLES */
+        .header {
+          background-color: #000;
+          color: #000;
+          height: 110px;
+          position: relative;
+          width: 100%;
+        }
         .header-nav {
           float: right;
+          padding: 5.5vh 60px 0 0;
         }
         .header-nav > li {
           display: inline-block;
+          margin-left: 1em;
         }
-
+        .header-nav > li:first-child a {
+          color: #ed6e2f;
+        }
+        .header-nav > li:first-child a:hover {
+          color: #000;
+        }
+        .header-nav > li ~ li {
+          border-left: 1px solid rgba(0, 0, 0, 0.3);
+          padding-left: 1em;
+        }
+        .header-nav a {
+          color: white;
+          font-size: 0.8rem;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+        .header-nav a:hover,
+        .header-nav a:active {
+             color: #ed6e2f;
+        }
+        .header-logo:hover,
+        .header-logo:active {
+            opacity: 0.5;
+        }
+        .header-logo {
+          background-color: #000;
+          left: 50%;
+          height: 110px;
+          position: absolute;
+          width: 110px;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
         /* HERO STYLES */
         .full-hero {
             background-color: #C3D7FF;
-            height: 30vh;
+            background-size: cover;
+            box-sizing: border-box;
+            height: 100vh;
+            padding-top: 10vh;
         }
-    
+        .hero-home {
+          background-image: url(/images/joshua_tree.jpg);
+          background-position: center top;
+        }
         /* PAGE LINKS */
         .page-list {
             list-style: none;
-            padding: 0;
             text-align: center;
         }
         .page-list > li {
             display: inline-block;
-            margin: 0 0.5em;
+            margin-left: 0.5em;
         }
         .page-link {
             background: rgba(150, 150, 150, 0.5);
             border-radius: 200px;
             box-sizing: border-box;
-            color: blue;
+            color: white;
             display: inline-block;
             font-family: helvetica;
             font-size: 1rem;
             font-weight: bold;
-            height: 2.5em
+            height: 2em
             line-height: 1;
-            padding-top: 0.85em;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
             text-align: center;
             text-decoration: none;
             vertical-align: middle;
-            width: 2.5em;
+            width: 4em;
         }
       
