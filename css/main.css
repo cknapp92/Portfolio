@@ -49,8 +49,9 @@ a img {
  /* GLOBAL STYLES */
       
         h1 {
-            color: blue;
-            font-family: cursive;
+            color: white;
+            text-align: center;
+            font-family: helvetica;
             font-size: 7vw;
             margin-top: 0;
         }
@@ -60,7 +61,7 @@ a img {
 
         /* HEADER STYLES */
         .header {
-          background-color: #000;
+          background-color: black;
           color: #000;
           height: 110px;
           position: relative;
@@ -81,7 +82,7 @@ a img {
           color: #000;
         }
         .header-nav > li ~ li {
-          border-left: 1px solid rgba(0, 0, 0, 0.3);
+          border-left: 1px solid rgba(10, 10, 10, 1);
           padding-left: 1em;
         }
         .header-nav a {
@@ -106,6 +107,8 @@ a img {
           position: absolute;
           width: 110px;
           top: 50%;
+          background-image: url(/images/heraldry.jpg);
+          background-position: center top;
           transform: translate(-50%, -50%);
         }
         /* HERO STYLES */
