@@ -58,18 +58,23 @@ a img {
         a {
             color: #f00
         }
-
+        p {
+          line-height: 1.5;
+          margin: 0.75em 0;
+        }
         /* HEADER STYLES */
         .header {
           background-color: black;
-          color: #000;
-          height: 110px;
+          color: black;
+          height: 80px;
           position: relative;
           width: 100%;
         }
         .header-nav {
-          float: right;
-          padding: 5.5vh 60px 0 0;
+          text-align: center;
+          font-family: 'Quicksand', sans-serif;
+          list-style-type: none;
+          padding: 5vh 30px 0 0;
         }
         .header-nav > li {
           display: inline-block;
@@ -82,12 +87,12 @@ a img {
           color: #000;
         }
         .header-nav > li ~ li {
-          border-left: 1px solid rgba(10, 10, 10, 1);
+          border-left: 1px solid black;
           padding-left: 1em;
         }
         .header-nav a {
           color: white;
-          font-size: 0.8rem;
+          font-size: 1rem;
           font-weight: bold;
           text-decoration: none;
           text-transform: uppercase;
@@ -96,33 +101,87 @@ a img {
         .header-nav a:active {
              color: #ed6e2f;
         }
-        .header-logo:hover,
-        .header-logo:active {
-            opacity: 0.5;
-        }
-        .header-logo {
-          background-color: #000;
-          left: 50%;
-          height: 110px;
-          position: absolute;
-          width: 110px;
-          top: 50%;
-          background-image: url(/images/heraldry.jpg);
-          background-position: center top;
-          transform: translate(-50%, -50%);
-        }
         /* HERO STYLES */
         .full-hero {
             background-color: #C3D7FF;
             background-size: cover;
             box-sizing: border-box;
-            height: 100vh;
-            padding-top: 10vh;
+            height: 110vh;
+            padding-bottom: 20vh;
+        }
+        .full-hero:after {
+          bottom: 2vh;
+          color: #fff;
+          content: "﹀";
+          font-size: 36px;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, 0);
+        }
+        .full-hero:after {
+          bottom: 2vh;
+          border: 10px solid;
+          border-color: #fff transparent transparent;
+          content: "";
+          height: 0;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, 0);
+          width: 0;
         }
         .hero-home {
           background-image: url(/images/joshua_tree.jpg);
-          background-position: center top;
+          background-position: center center;
         }
+        .hero-content {
+          position: relative;
+          text-align: center;
+          text-transform: uppercase;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        .hero-content h1 {
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 6vw;
+          margin-bottom: 0.25em;
+          font-family: 'Eczar', serif;
+        }
+        .hero-content .page-link {
+          background-color: rgba(255, 255, 255, 0.6);
+          color: #557c83;
+        }
+        .hero-content .page-link:hover {
+          background-color: #000;
+          color: #fff;
+        }
+        /* HOMEPAGE STYLES */
+        .home-callout {
+          display: flex;
+          align-items: center;
+          background-color: #000;
+          color: #fff;
+          padding: 7vh 0;
+        }
+        .home-callout h3 {
+          color: inherit;
+          margin-top: 1em;
+        }
+        .callout-title {
+          font-family: 'Zilla Slab Highlight', cursive;
+          flex-grow: 1;
+          flex-basis: 0;
+          font-size: 5.75vw;
+          text-align: right;
+          text-transform: uppercase;
+        }
+        .callout-copy {
+          font-family: 'Open Sans', sans-serif;
+          flex-shrink: 0;
+          flex-basis: 45em;
+          padding: 0 2vw;
+          font-size: 1rem;
+        }
+        
         /* PAGE LINKS */
         .page-list {
             list-style: none;
