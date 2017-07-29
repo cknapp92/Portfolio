@@ -51,8 +51,7 @@ a img {
         h1 {
             color: white;
             text-align: center;
-            font-family: helvetica;
-            font-size: 7vw;
+            font-size: 8vh;
             margin-top: 0;
         }
         a {
@@ -88,7 +87,7 @@ a img {
         }
         .header-nav > li ~ li {
           border-left: 1px solid black;
-          padding-left: 1em;
+          padding-left: 2em;
         }
         .header-nav a {
           color: white;
