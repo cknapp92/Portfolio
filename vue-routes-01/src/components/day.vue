@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-   <h1>{{ msg }} {{ $route.params.name }}</h1>
+  <div class="day container">
+   <h1 class="container text-center">{{ msg }} {{ $route.params.name }}</h1>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'day',
   data () {
     return {
-      msg: 'day'
+      msg: 'Day'
     }
   }
 }

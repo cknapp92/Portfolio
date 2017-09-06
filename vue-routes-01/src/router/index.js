@@ -4,7 +4,13 @@ import BootstrapVue from 'bootstrap-vue'
 import home from '@/components/home'
 import day from '@/components/day'
 import about from '@/components/about'
-import blog from '@/components/blog'
+import projects from '@/components/projects'
+import test from '@/components/test'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import footer from '@/components/footer'
+
+Vue.use(VueAxios, axios)
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
@@ -27,9 +33,19 @@ export default new Router({
       component: about
     },
     {
-      path: '/blog/',
-      name: 'blog',
-      component: blog
+      path: '/projects/',
+      name: 'projects',
+      component: projects
+    },
+    {
+      path: '/test/',
+      name: 'test',
+      component: test
+    },
+    {
+      path: '/footer/',
+      name: 'footer',
+      component: footer
     }
   ]
 })
