@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
-   <h1>{{ msg }} {{ $route.params.name }}</h1>
+  <div class="blog">
+   <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'day',
+  name: 'blog',
   data () {
     return {
-      msg: 'day'
+      msg: 'Project blog'
     }
   }
 }
