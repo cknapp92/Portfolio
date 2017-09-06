@@ -1,7 +1,7 @@
 <template>
   <ul class="nav nav-pills">
-    <li role="presentation"><router-link to="/">Home</router-link></li>
-    <li role="presentation"><router-link to="/about">About</router-link></li>
-    <li role="presentation"><router-link to="/blog">Blog</router-link></li>
+    <router-link to="/" tag="li" active-class="active" exact><a>Home</a></router-link>
+    <router-link to="/about" tag="li" active-class="active"><a>About</a></router-link>
+    <router-link to="/blog" tag="li" active-class="active"><a>Blog</a></router-link>
   </ul>
 </template>
