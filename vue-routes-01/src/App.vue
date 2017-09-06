@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <img src="../../images/heraldry.jpg">
-    <router-view></router-view>
+    <img src="../../images/lambda.jpg">
     <app-header></app-header>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,10 +10,10 @@
 
 import header from '@/components/header.vue'
 export default {
-  name: 'app',
   components: {
     appHeader: header
-  }
+  },
+  name: 'app'
 }
 </script>
 
