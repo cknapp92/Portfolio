@@ -5,10 +5,7 @@
         <h1 class="text-success">Conrad Knapp</h1>
           <p class="text-success">111 Days, 111 Web Apps</p>
       </div>
-
-
    </div>
-
 
 <!--<message-box></message-box>-->
 

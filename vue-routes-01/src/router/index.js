@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import home from '@/components/home'
-import day from '@/components/day'
 import about from '@/components/about'
 import projects from '@/components/projects'
 import test from '@/components/test'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import footer from '@/components/footer'
+import day1 from '@/components/day1'
 
 Vue.use(VueAxios, axios)
 
@@ -21,11 +21,6 @@ export default new Router({
       path: '/',
       name: 'home',
       component: home
-    },
-    {
-      path: '/day/:name',
-      name: 'day',
-      component: day
     },
     {
       path: '/about/',
@@ -46,6 +41,11 @@ export default new Router({
       path: '/footer/',
       name: 'footer',
       component: footer
+    },
+    {
+      path: '/day1/',
+      name: 'day1',
+      component: day1
     }
   ]
 })
