@@ -1,18 +1,18 @@
 <template>
 
-<div class="text-center container">
+<footer class="text-center container-fluid">
   <p>Conrad Knapp, 2017.</p>
-</div>
+</footer>
 
 </template>
 
-<style>
-body {
-  padding-bottom: 50px;
-}
 
-.text-center {
-  padding: 50px;
+<style>
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
 }
 
 </style>

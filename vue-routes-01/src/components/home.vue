@@ -13,16 +13,13 @@
 </template>
 
 <script>
-import message from '@/components/message.vue'
+
 export default {
   name: 'home',
   data () {
     return {
       msg: 'Home page'
     }
-  },
-  components: {
-    messageBox: message // can clean this up by making key name === value and deleting the value
   }
 }
 

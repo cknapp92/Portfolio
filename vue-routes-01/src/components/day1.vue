@@ -28,7 +28,7 @@ export default {
     }
   },
   props: ['subreddit', 'limit'],
-  created: function () {
+  created () {
     let vm = this
     axios.get('https://www.reddit.com/r/' + this.subreddit + '/.json?limit=' + this.limit)
          .then(response => {
@@ -38,7 +38,6 @@ export default {
 }
 
 </script>
-
 
 <style>
 
@@ -53,6 +52,5 @@ export default {
   border: solid 2px #f5f5f5;
   border-radius: 4px;
 }
-
 
 </style>
