@@ -3,11 +3,14 @@
 
 <div class="reddit-list container col align-self-center">
 <h3 class="header">Top Threads: /r/{{ subreddit }}   <span class="badge badge-secondary">New</span></h3>
-<ul class="list-group">
-    <li v-for="post in posts">
-  <a v-bind:href="post.data.url" class="text-success">{{ post.data.title }}</a>
-    </li>
-</ul>
+  <div class="row" v-for="post in posts">
+    <div class="col-sm-4">
+    <img v-bind:src="post.data.thumbnail" alt="">
+    </div>
+    <div class="col-sm-8">
+    <a v-bind:href="post.data.url" class="text-success">{{ post.data.title }}</a>
+   </div>
+</div>
 </div>
 
 </div>
@@ -25,12 +28,12 @@ export default {
     }
   },
   props: ['subreddit', 'limit'],
-  mounted: function () {
+  created: function () {
     let vm = this
     axios.get('https://www.reddit.com/r/' + this.subreddit + '/.json?limit=' + this.limit)
-    .then(response => {
-      vm.posts = response.data.data.children
-    })
+         .then(response => {
+           vm.posts = response.data.data.children
+         })
   }
 }
 
@@ -46,27 +49,10 @@ export default {
 
 .reddit-list {
   width: 600px;
-  padding: 15px;
   background: black;
   border: solid 2px #f5f5f5;
   border-radius: 4px;
 }
 
-.header {
-  margin-bottom: 30px;
-}
 
-.reddit-list h3 {
-  font-weight: bold;
-}
-
-.reddit-list ul {
-  font-size: 17px;
-  list-style-type: none;
-  padding: 0;
-}
-
-.reddit-list ul li {
-  margin-bottom: .5rem;
-}
 </style>

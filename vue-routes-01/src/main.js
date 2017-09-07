@@ -20,5 +20,5 @@ new Vue({
   router,
   template: '<day1/>',
   components: { day1 },
-  render: h => h(day1, {props: {subreddit: 'The_Donald', limit: 5}})
+  render: h => h(day1, {props: {subreddit: 'todayilearned', limit: 5}})
 })

@@ -22,7 +22,7 @@ export default {
     }
   },
   components: {
-    messageBox: message
+    messageBox: message // can clean this up by making key name === value and deleting the value
   }
 }
 
