@@ -1,7 +1,8 @@
 <template>
 
 <div id="nytApp" class="container text-center">
-  <h3>New York Times Top Stories</h3>
+  <h3><em>New York Times</em> - Today's Top Stories</h3>
+  <h5><span class="glyphicon glyphicon-time"></span> September 7th, 2017</h5>
 
   <div v-for="result in results">
         <div class="well">{{ result.title }}</div>

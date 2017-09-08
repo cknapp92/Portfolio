@@ -3,7 +3,8 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="text-success">Conrad Knapp</h1>
-          <p class="text-success">111 Days, 111 Web Apps</p>
+          <p class="text-success">111 Days of Vue.js</p>
+          <router-link to="/projects" class="btn btn-primary btn-lg">Have a look</router-link>
       </div>
    </div>
 
