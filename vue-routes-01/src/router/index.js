@@ -4,12 +4,12 @@ import BootstrapVue from 'bootstrap-vue'
 import home from '@/components/home'
 import about from '@/components/about'
 import projects from '@/components/projects'
-import test from '@/components/test'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import footer from '@/components/footer'
 import day1 from '@/components/day1'
 import day2 from '@/components/day2'
+import day3 from '@/components/day3'
 
 Vue.use(VueAxios, axios)
 
@@ -34,11 +34,6 @@ export default new Router({
       component: projects
     },
     {
-      path: '/test/',
-      name: 'test',
-      component: test
-    },
-    {
       path: '/footer/',
       name: 'footer',
       component: footer
@@ -52,6 +47,11 @@ export default new Router({
       path: '/day2/',
       name: 'day2',
       component: day2
+    },
+    {
+      path: '/day3/',
+      name: 'day3',
+      component: day3
     }
   ]
 })
