@@ -1,8 +1,13 @@
 <template>
-<div id="app" class="container text-center">
-<h3>Grocery List</h3>
-<input id="itemBox" v-on:keyup.enter="addItem" />
-<button @click="addItem">Add to list</button>
+<div class="app container text-center">
+<h3>{{ title }}</h3>
+  <div class="typing">
+    <input id="itemBox" size=8 v-model="input" v-on:keyup.enter="addItem" />
+    <button @click="addItem">{{ 'Add ' + input }}</button>
+    <p v-if="ifTyping">Typing...</p>
+    <p v-else="!ifTyping">.</p>
+  </div>
+
 <div>
 <div class="list-group">
   <a class="list-group-item" v-for="item in items">{{ item.text }}
@@ -18,6 +23,9 @@
 export default({
   data () {
     return {
+      title: 'Grocery List',
+      input: '',
+      ifTyping: false,
       items: [
         { text: 'coffee' },
         { text: 'eggs' },
@@ -25,14 +33,22 @@ export default({
       ]
     }
   },
+  watch: {
+    input: function (query) {
+      this.ifTyping = true
+      let vm = this
+      setTimeout(function () {
+        vm.ifTyping = false
+      }, 500)
+    }
+  },
   methods: {
     addItem () {
-      var input = document.getElementById('itemBox')
-      if (input.value !== '') {
+      if (this.input !== '') {
         this.items.push({
-          text: input.value
+          text: this.input
         })
-        input.value = ''
+        this.input = ''
       }
     },
     removeItem (i) {
@@ -44,13 +60,25 @@ export default({
 
 <style>
 
-#app .container {
+.app {
   background-color: lightblue;
-  max-width: 400px;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 #itemBox {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.typing {
+  display: inline-block;
+}
+
+
+.list-group {
+  margin-top: 5px;
 }
 
 </style>
