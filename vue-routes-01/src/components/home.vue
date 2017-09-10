@@ -3,12 +3,10 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="text-success">Conrad Knapp</h1>
-          <p class="text-success">111 Days of Vue.js</p>
+          <p class="text-default">111 Days of Vue.js</p>
           <router-link to="/projects" class="btn btn-primary btn-lg">Have a look</router-link>
       </div>
    </div>
-
-<!--<message-box></message-box>-->
 
   </div>
 </template>
@@ -26,7 +24,12 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
+.jumbotron {
+  background-color: #2A52BE;
+  color: #fff;
+  padding: 50px;
+}
 
 </style>

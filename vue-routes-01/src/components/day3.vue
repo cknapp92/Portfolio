@@ -1,18 +1,16 @@
 <template>
 <div class="app container text-center">
-<h3>{{ title }}</h3>
-  <div class="typing">
-    <input id="itemBox" size=8 v-model="input" v-on:keyup.enter="addItem" />
-    <button @click="addItem">{{ 'Add ' + input }}</button>
+<h3 v-once>{{ title }}</h3>
+  <div class="inputBox">
+    <input id="itemBox" size=8 v-model="input" v-on:keypress.enter="addItem" />
+    <button type="button" class="btn btn-primary btn-sm" @click="addItem">{{ 'Add ' + input }}</button>
     <p v-if="ifTyping">Typing...</p>
     <p v-else="!ifTyping">.</p>
   </div>
 
-<div>
-<div class="list-group">
-  <a class="list-group-item" v-for="item in items">{{ item.text }}
-    <button @click="removeItem(i)">x</button>
-  </a>
+<div class="list-group" v-for="item in items">
+    <a class="list-group-item">{{ item.text }}<button type="button" class="smallButton btn btn-primary btn-xs" @click="removeItem(i)">x</button></a>
+    </label>
 </div>
 </div>
 </div>
@@ -25,6 +23,7 @@ export default({
     return {
       title: 'Grocery List',
       input: '',
+      checked: false,
       ifTyping: false,
       items: [
         { text: 'coffee' },
@@ -72,10 +71,13 @@ export default({
   margin-bottom: 5px;
 }
 
-.typing {
+.inputBox {
   display: inline-block;
 }
 
+.smallButton {
+  margin-left: 10px;
+}
 
 .list-group {
   margin-top: 5px;

@@ -1,6 +1,6 @@
 <template>
 
-<footer class="text-center container-fluid">
+<footer class="footer text-center container-fluid">
   <p>Conrad Knapp, 2017.</p>
 </footer>
 
