@@ -10,6 +10,7 @@ import footer from '@/components/footer'
 import day1 from '@/components/day1'
 import day2 from '@/components/day2'
 import day3 from '@/components/day3'
+import day4 from '@/components/day4'
 
 Vue.use(VueAxios, axios)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/day3/',
       name: 'day3',
       component: day3
+    },
+    {
+      path: '/day4/',
+      name: 'day4',
+      component: day4
     }
   ]
 })
