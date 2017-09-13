@@ -23,9 +23,15 @@
     <div class="col-sm-3">
     <div class="thumbnail">
       <img src="../../../images/lambda.jpg">
-      <router-link to="/day4" class="btn text"><a>Something else</a></router-link>
+      <router-link to="/day4" class="btn text"><a>Guestbook</a></router-link>
     </div>
   </div>
+  <div class="col-sm-3">
+  <div class="thumbnail">
+    <img src="../../../images/lambda.jpg">
+    <router-link to="/day5" class="btn text"><a>Button Factory</a></router-link>
+  </div>
+</div>
   </div>
  </div>
 

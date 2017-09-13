@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     todayDate () {
-      return new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() + '-' + new Date().getDay()
+      return new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate()
     }
   }
 }

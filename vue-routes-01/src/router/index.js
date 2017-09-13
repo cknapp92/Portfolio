@@ -11,6 +11,7 @@ import day1 from '@/components/day1'
 import day2 from '@/components/day2'
 import day3 from '@/components/day3'
 import day4 from '@/components/day4'
+import day5 from '@/components/day5.vue'
 
 Vue.use(VueAxios, axios)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/day4/',
       name: 'day4',
       component: day4
+    },
+    {
+      path: '/day5/',
+      name: 'day5',
+      component: day5
     }
   ]
 })
