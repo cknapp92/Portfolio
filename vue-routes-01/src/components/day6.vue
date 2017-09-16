@@ -1,6 +1,6 @@
 <template>
   <div class="container col-md-5 py-5">
-  	<h1 class="h3 text-center">Registration</h1>
+  	<h1 class="h3 text-center">{{ name }}</h1>
 
   	<form class="form-inline">
 	  <label for="inputPassword">Username</label>
@@ -11,7 +11,6 @@
   	<form class="form-inline">
 	  <label for="inputPassword">Email</label>
 	    <input type="email" class="form-control" placeholder="Your Email" v-model.trim="email">
-	</form>
 
 	<form class="form-inline">
 	  <label for="inputPassword">Password</label>
