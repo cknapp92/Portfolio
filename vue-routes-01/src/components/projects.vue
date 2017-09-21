@@ -38,6 +38,12 @@
   <router-link to="/day6" class="btn text"><a>Registration Field</a></router-link>
 </div>
 </div>
+ <div class="col-sm-3">
+<div class="thumbnail">
+  <img src="../../../images/lambda.jpg">
+  <router-link to="/day7" class="btn text"><a>Button Reveal</a></router-link>
+</div>
+</div>
   </div>
  </div>
 
