@@ -12,7 +12,7 @@ footer {
   background-color: #555;
   color: white;
   padding: 15px;
-  position: fixed; bottom: 0 /* footer sticks to bottom of page */
+ /* position: fixed; bottom: 0 // footer sticks to bottom of page */
 }
 
 </style>
