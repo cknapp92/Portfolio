@@ -44,6 +44,12 @@
   <router-link to="/day7" class="btn text"><a>Button Reveal</a></router-link>
 </div>
 </div>
+ <div class="col-sm-3">
+<div class="thumbnail">
+  <img src="../../../images/lambda.jpg">
+  <router-link to="/day8" class="btn text"><a>Red Square Tour</a></router-link>
+</div>
+</div>
   </div>
  </div>
 
